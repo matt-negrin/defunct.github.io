@@ -117,10 +117,14 @@ s3_upload: publish
 cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
-github: publish
-	ghp-import -b $(GITHUB_PAGES_BRANCH) -n $(OUTPUTDIR)
-	@git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git $(GITHUB_PAGES_BRANCH) > /dev/null
+# github: publish
+# 	ghp-import -b $(GITHUB_PAGES_BRANCH) -n $(OUTPUTDIR)
+# 	@git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git $(GITHUB_PAGES_BRANCH) > /dev/null
 
+github: publish
+	@git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} $(GITHUB_PAGES_BRANCH)
+	git push origin $(GITHUB_PAGES_BRANCH)
+	
 # github: publish
 # 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 # 	git push origin $(GITHUB_PAGES_BRANCH)

@@ -75,7 +75,7 @@ PLUGINS=['liquid_tags.notebook','ipynb.liquid',]
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
 
-EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}, 'extras/.travis.yml': {'path': '.travis.yml'}}
+# EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}, 'extras/.travis.yml': {'path': '.travis.yml'}}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
