@@ -3,9 +3,9 @@
 # platform: osx-64
 _license=1.1=py27_1
 alabaster=0.7.9=py27_0
-anaconda=custom=py27_0
-anaconda-client=1.6.2=py27_0
-anaconda-navigator=1.4.3=py27_0
+#anaconda=custom=py27_0
+#anaconda-client=1.6.2=py27_0
+#anaconda-navigator=1.4.3=py27_0
 appnope=0.1.0=py27_0
 appscript=1.0.1=py27_0
 argcomplete=1.0.0=py27_1

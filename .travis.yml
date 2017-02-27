@@ -6,8 +6,7 @@ branches:
   only:
   - sources
 install:
-# - pip install -r requirements.txt
-- while read requirement; do conda install --yes $requirement; done < requirements.txt
+- pip install -r requirements.txt
 script:
 - make publish github
 env:
