@@ -15,7 +15,7 @@ blinker==1.4
 bokeh==0.12.4
 boto==2.45.0
 Bottleneck==1.2.0
-cdecimal==2.3
+m3-cdecimal
 cffi==1.9.1
 chardet==2.3.0
 chest==0.2.3
