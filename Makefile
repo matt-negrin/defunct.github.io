@@ -26,6 +26,7 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 DROPBOX_DIR=~/Dropbox/Public/
 
 GITHUB_PAGES_BRANCH=master
+TRAVIS_REPO_SLUG=matt-negrin/matt-negrin.github.io
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)

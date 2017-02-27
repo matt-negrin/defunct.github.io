@@ -64,6 +64,8 @@ STATIC_PATHS = ['images', 'notebooks']
 
 USE_LESS = False
 
+NOTEBOOK_DIR = ['notebooks']
+
 #Article and page pretty urls
 # ARTICLE_URL = '{slug}/'
 # ARTICLE_SAVE_AS = '{slug}/index.html'
