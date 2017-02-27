@@ -1,12 +1,13 @@
 language: python
 python:
 - '2.7'
-# sudo: required
+sudo: required
 branches:
   only:
   - sources
 install:
-- pip install -r requirements.txt
+# - pip install -r requirements.txt
+- while read requirement; do conda install --yes $requirement; done < requirements.txt
 script:
 - make publish github
 env:
