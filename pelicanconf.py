@@ -6,7 +6,7 @@ AUTHOR = u'Matt Negrin'
 SITENAME = u'Matt Negrin'
 SITEURL = ''
 SITENAME = "Matt Negrin's Blog"
-SITESUBTITLE = 'Data Scientist at Birchbox'
+SITESUBTITLE = 'Data Scientist - Birchbox'
 SITELOGO = '/images/bitm.png'
 SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
 FAVICON = '/images/favicon.ico'
@@ -24,6 +24,8 @@ LOCALE = 'en_US'
 DATE_FORMATS = {
     'en': '%B %d, %Y',
 }
+
+ROBOTS = 'index, follow'
 
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
