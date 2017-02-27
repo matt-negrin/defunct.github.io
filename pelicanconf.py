@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Matt Negrin'
 SITENAME = u'Matt Negrin'
-SITEURL = 'http://localhost:8000'
+SITEURL = ''
 SITENAME = "Matt Negrin's Blog"
 SITESUBTITLE = 'Data Scientist at Birchbox'
 SITELOGO = '/images/bitm.png'
@@ -14,6 +14,7 @@ BROWSER_COLOR = '#333333'
 PYGMENTS_STYLE = 'monokai'
 
 THEME = 'themes/Flex'
+PYGMENTS_STYLE = 'native'
 PATH = 'content'
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
@@ -64,10 +65,10 @@ STATIC_PATHS = ['images', 'notebooks']
 USE_LESS = False
 
 #Article and page pretty urls
-ARTICLE_URL = '{slug}/'
-ARTICLE_SAVE_AS = '{slug}/index.html'
-PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/index.html'
+# ARTICLE_URL = '{slug}/'
+# ARTICLE_SAVE_AS = '{slug}/index.html'
+# PAGE_URL = '{slug}/'
+# PAGE_SAVE_AS = '{slug}/index.html'
 
 MARKUP=('md','ipynb')
 PLUGIN_PATHS=['pelican-plugins','plugins']
