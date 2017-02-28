@@ -18,8 +18,6 @@ PYGMENTS_STYLE = 'native'
 PATH = 'content'
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
-OG_LOCALE = 'en_US'
-LOCALE = 'en_US'
 
 DATE_FORMATS = {
     'en': '%B %d, %Y',

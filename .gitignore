@@ -1,0 +1,5 @@
+#Ipython Notebook
+.ipynb_checkpoints
+
+#Pelican generated output
+output/
