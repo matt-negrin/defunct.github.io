@@ -74,7 +74,7 @@ NOTEBOOK_DIR = ['notebooks']
 
 MARKUP=('md','ipynb')
 PLUGIN_PATHS=['pelican-plugins','plugins']
-PLUGINS=['liquid_tags.notebook','ipynb.liquid',]
+PLUGINS=['liquid_tags.notebook','ipynb.liquid', 'pelican_youtube',]
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
 
