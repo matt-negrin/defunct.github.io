@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Matt Negrin'
 SITENAME = u'Matt Negrin'
-SITEURL = ''
+SITEURL = 'matt-negrin.github.io'
 SITENAME = "Matt Negrin's Blog"
 SITESUBTITLE = 'Data Scientist - Birchbox'
 SITELOGO = '/images/bitm.png'
