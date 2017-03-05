@@ -80,5 +80,12 @@ IPYNB_IGNORE_CSS = True
 
 EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}}
 
+MARKDOWN = {
+  'extension_configs': {
+    'pyembed.markdown': {}
+  }
+}
+
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

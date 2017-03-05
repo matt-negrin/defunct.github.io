@@ -14,7 +14,8 @@ To kick things off, I thought it would be fun to reflect on the first end-to-end
 
 ### Here's a video!
 
-youtube:: QxiTnqGxnZg
+<!-- youtube:: QxiTnqGxnZg -->
+[!embed](http://www.youtube.com/watch?v=QxiTnqGxnZg)
 
 Here are some words after the video!
 
