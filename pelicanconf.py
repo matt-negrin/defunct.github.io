@@ -60,11 +60,12 @@ SITEMAP = {
     }
 }
 
-STATIC_PATHS = ['images', 'notebooks', 'extras']
+STATIC_PATHS = ['images', 'notebooks', 'extras', 'code']
 
 USE_LESS = False
 
 NOTEBOOK_DIR = ['notebooks']
+CODE_DIR = ['code']
 
 #Article and page pretty urls
 # ARTICLE_URL = '{slug}/'
@@ -74,7 +75,7 @@ NOTEBOOK_DIR = ['notebooks']
 
 MARKUP=('md','ipynb')
 PLUGIN_PATHS=['pelican-plugins','plugins']
-PLUGINS=['liquid_tags.notebook','ipynb.liquid', 'pelican_youtube',]
+PLUGINS=['liquid_tags.notebook','liquid_tags.include_code','ipynb.liquid', 'pelican_youtube',]
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
 
