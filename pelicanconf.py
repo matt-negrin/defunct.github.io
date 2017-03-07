@@ -65,7 +65,7 @@ STATIC_PATHS = ['images', 'notebooks', 'extras', 'code']
 USE_LESS = False
 
 NOTEBOOK_DIR = ['notebooks']
-CODE_DIR = ['code']
+# CODE_DIR = ['code']
 
 #Article and page pretty urls
 # ARTICLE_URL = '{slug}/'
