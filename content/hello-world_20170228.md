@@ -25,12 +25,13 @@ Summary: A blog post down memory lane
 ######To say this was a hack-y project is an understatement. With little coding experience, I was really working off the cuff, reading whichever blog posts and Stack Overflow comments I could find to guide me. In retrospect, the project gave me exposure to a couple of great R packages, such as <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> and <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>. Additionally, this was my first experience with <a href="http://crontab.org/" target="_blank">Crontab</a>, which has now become a staple for me, both at home and at work.
 ######Citibike generously makes their data easy to access. Annyone can go to <a href="http://citibikenyc.com/stations/json" target="_blank">this url</a> at any time to get a live snapshot of every station in the system, including the number of bikes available, the number of docks available, and the latitude/ longitutde location. R package <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> makes reading clean json data ridiculously easy, with just one line of code:
 
-{% include_code citibike_map.R %}
+```r
+require(jsonlite)
+json_data = jsonlite::fromJSON(txt = "http://citibikenyc.com/stations/json")
+```
 
 ######The json file provides a dataframe with the station data. To plot each of the stations on a map of NYC, I found an R package, <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>, which provides a great ggplot-like style for plotting latitude and longitude data. 
 ######Here is some sample code to generate the map of NYC and plot the corresponding stations.
-
-{% include_code citibike_map.R %}
 
 ######So I thought this was pretty cool, but a snapshot was only so informative. The natural question is how this plot changes as the day went on. Thus, I discovered <a href="http://crontab.org/" target="_blank">Cron</a>. I scheduled my script to run every 5 minutes, saving a copy of the mapped image with a time-stamped filename to a folder on my local computer. I realized shortly thereafater that the cron would not run with my computer closed (duh). My crude solution was to leave my computer open and running for a full 48 hours (thanks, <a href="http://lightheadsw.com/caffeine/" target="_blank">caffeine</a>)!.
 ######Two days later, I had a folder of images with timestamped titles. I strung them together in a video to represent the 24-hour timeframe, and that was it!
@@ -51,5 +52,3 @@ Summary: A blog post down memory lane
 <br><br>
 ##**next steps?**
 ######For this project, I don't have any! It was fun to go back down project memory lane. Below is the full script I wrote to generate and save a single map with plotted stations. For my next post, I'll focus on something I've been working on recently. Happy Citibiking!
-
-{% include_code citibike_map.R %}

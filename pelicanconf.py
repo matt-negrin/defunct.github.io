@@ -83,7 +83,8 @@ EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}}
 
 MARKDOWN = {
   'extension_configs': {
-    'pyembed.markdown': {}
+    'pyembed.markdown': {},
+    'codehilite(linenums = True)' : {}
   }
 }
 
