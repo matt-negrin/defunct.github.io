@@ -1,7 +1,7 @@
 Title: Hello, World!
 Date: 2017-02-28 12:00
 Category: Projects
-Tags: projects, citibike, R, ggmap, jsonlite, caffeine
+Tags: citibike, R, ggmap, jsonlite, caffeine
 slug:hello-world
 Authors: Matt Negrin
 Summary: A blog post down memory lane
@@ -11,7 +11,7 @@ Summary: A blog post down memory lane
 ###**hi there**
 Welcome to my data blog. For a long time I have wanted to document some of my side projects and learnings. After years of procrastination, I've finally begun. Welcome!  
  
-To kick things off, I thought it would be fun to reflect on the first data project I ever worked on. Being a bit introspective, my data science career track genuinely began (unknowingly) in an econometrics class in college. However, I did not formally begin learning about what data science was as a practice was until well after. In early 2014, I began working on data projects, not only as a means of self-learning, but also because I was fascinated by solving historically abstract problems with interesting data sets (this seemed to tie closely to why I enjoyed econometrics in college... nerd alert).  
+To kick things off, I thought it would be fun to reflect on the first data project I ever worked on. Being a bit introspective, my data science career track genuinely began (unknowingly) in an econometrics class in college. However, I did not formally begin learning about what data science was as a practice was until well after. In early 2014, I began working on data projects, not only as a means of self-learning, but also because I was fascinated by solving historically abstract problems with interesting data sets (this seemed to tie closely to why I enjoyed econometrics in college... <a href="https://media.giphy.com/media/yODVOeMxWBwBO/giphy.gif" target="_blank">nerd alert</a>).  
  
 I got hooked pretty quickly and have been working on side projects ever since, ranging from participating in machine learning kaggle competitions to building interactive Shiny apps to generating fantasy football lineup predictions, most recently working more intently on deep learning and image classification.  
 
@@ -24,6 +24,7 @@ Here it is! The first data project I completed. As an early adopter of Citibike,
 Let's start with the final product. The video below visualizes the flow of Citibike station capacity onto a map of Manhattan for a 24-hour period (July 9, 2014). Each circle is a different Citibike station. The size of the circle indicates what percentage of its docks are unavailable. If the dock is completely full, the station circle turns red. The time lapse begins at midnight. Pay close attention to the trend during commuting hours. (Thank you to <a href="http://www.queenonline.com/" target="_blank">Queen</a> for one of my favorite childhood songs).
  
 [!embed](http://www.youtube.com/watch?v=QxiTnqGxnZg)
+ 
  
  
 ###**how did i build it?**
