@@ -9,7 +9,7 @@ Summary: A blog post down memory lane
  
  
 ###**hi there**
-Welcome to my data blog. For a long time I have wanted to document some of my side projects and learnings. After years of procrastination, I've finally begun. Welcome!  
+For a long time I have wanted to document some of my side projects and learnings. After years of procrastination, I've finally begun. Welcome!  
  
 To kick things off, I thought it would be fun to reflect on the first data project I ever worked on. Being a bit introspective, my data science career track genuinely began (unknowingly) in an econometrics class in college. However, I did not formally begin learning about what data science was as a practice was until well after. In early 2014, I began working on data projects, not only as a means of self-learning, but also because I was fascinated by solving historically abstract problems with interesting data sets (this seemed to tie closely to why I enjoyed econometrics in college... <a href="https://media.giphy.com/media/yODVOeMxWBwBO/giphy.gif" target="_blank">nerd alert</a>).  
  
