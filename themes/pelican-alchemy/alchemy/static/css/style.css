@@ -1,8 +1,8 @@
 ::selection {
-  /*background: #0085a1;*/
-  background: rgba(0,255,0,0.3);
-  color: rgba(0,255,0,0.3);
-  /*color: #fff;*/
+  background: #0085a1;
+  /*background: rgba(0,255,0,0.3);*/
+  /*color: rgba(0,255,0,0.3);*/
+  color: #fff;
   text-shadow: none;
 }
 
@@ -12,19 +12,19 @@ body {
 }
 
 a {
-  /*color: #333*/
-  color: rgba(0,255,0,0.3)
+  color: #333
+  /*color: rgba(0,255,0,0.3)*/
 }
 
 a:focus,
 a:hover {
-  color: rgba(0,255,0,0.3);
-  /*color: #0085a1;*/
+  /*color: rgba(0,255,0,0.3);*/
+  color: #0085a1;
 }
 
 blockquote {
-  color: rgba(0,255,0,0.3);
-  /*color: #818a91;*/
+  /*color: rgba(0,255,0,0.3);*/
+  color: #818a91;
   font-style: italic;
 }
 
