@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Matt Negrin'
 SITENAME = u'Matt Negrin'
 SITEURL = 'https://matt-negrin.github.io'
-SITENAME = "Lazy Learning"
+SITENAME = "lazy learning"
 SITESUBTITLE = '''Taco and data enthusiast.
 Currently a data scientist at Birchbox.
 A blog mostly about statistics and machine learning, but I'm probably still thinking about tacos.'''
@@ -44,9 +44,10 @@ MAIN_MENU = True
 
 # LINKS = (('Pelican', 'http://getpelican.com/'),)
 
-ICONS = (('linkedin', 'https://www.linkedin.com/in/mattnegrin'),
-          ('github', 'https://github.com/matt-negrin'),
-          ('envelope-o', 'https://mail.google.com/mail/?view=cm&fs=1&to=matt.negrin@gmail.com'),)
+ICONS = (('smile-o', 'https://en.wikipedia.org/wiki/Lazy_learning'),
+         ('linkedin', 'https://www.linkedin.com/in/mattnegrin'),
+         ('github', 'https://github.com/matt-negrin'),
+         ('envelope-o', 'https://mail.google.com/mail/?view=cm&fs=1&to=matt.negrin@gmail.com'),)
 
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),

@@ -38,7 +38,8 @@ hr {
 }
 
 .header {
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,255,0,0.3);
+  /*border-bottom: 1px solid rgba(0,0,0,.1);*/
 }
 
 .header img {
@@ -67,11 +68,13 @@ hr {
 }
 
 .footer {
-  border-top: 1px solid rgba(0,0,0,.1);
+  border-top: 1px solid rgba(0,255,0,0.3);
+  /*border-top: 1px solid rgba(0,0,0,.1);*/
 }
 
 .highlight pre {
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0,255,0,0.3);
+  /*border: 1px solid rgba(0,0,0,.1);*/
   padding: 1rem;
 }
 

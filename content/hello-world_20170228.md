@@ -23,7 +23,7 @@ Here it is! The first data project I completed. As an early adopter of Citibike,
  
 Let's start with the final product. The video below visualizes the flow of Citibike station capacity onto a map of Manhattan for a 24-hour period (July 9, 2014). Each circle is a different Citibike station. The size of the circle indicates what percentage of its docks are unavailable. If the dock is completely full, the station circle turns red. The time lapse begins at midnight. Pay close attention to the trend during commuting hours. (Thank you to <a href="http://www.queenonline.com/" target="_blank">Queen</a> for one of my favorite childhood songs).
  
-[!embed](http://www.youtube.com/watch?v=QxiTnqGxnZg)
+[!embed](http://www.youtube.com/watch?v=QxiTnqGxnZg)  
  
  
  
