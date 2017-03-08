@@ -7,14 +7,19 @@ SITENAME = u'Matt Negrin'
 SITEURL = 'https://matt-negrin.github.io'
 SITENAME = "Matt Negrin's Blog"
 SITESUBTITLE = 'Data Scientist - Birchbox'
-SITELOGO = '/images/bitm.png'
-SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
+#Flex: SITELOGO = '/images/bitm.png'
+SITEIMAGE = '/images/bitm.png'
+DESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
 FAVICON = '/images/favicon.ico'
+# RFG_FAVICONS = '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
-PYGMENTS_STYLE = 'monokai'
+HIDE_AUTHORS = True
 
-THEME = 'themes/Flex'
-PYGMENTS_STYLE = 'native'
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
+
+#Flex: THEME = 'themes/Flex'
+THEME = 'themes/pelican-alchemy/alchemy'
+PYGMENTS_STYLE = 'monokai'
 PATH = 'content'
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
