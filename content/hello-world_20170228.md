@@ -16,21 +16,23 @@ The blog will be a work in progress. For now, I hope to write about the side pro
 
 ###**everyone loves videos**
 So here it is! The first data project I completed. As an early adopter of Citibike, I was intrigued by its open-sourced data. Citibike was already a popular source for analytical project work in 2014, but not nearly to the extent it is today. 
-Let's start with the final product. The video below visualizes the flow of Citibike station capacity onto a map of Manhattan for a 24-hour period (July 9, 2014). Each circle is a different Citibike station. The size of the circle indicates what percentage of its docks were unavailable. If the dock is completely full, the station circle turns red. The time lapse begins at midnight. Pay close attention during commuting hours.
+Let's start with the final product. The video below visualizes the flow of Citibike station capacity onto a map of Manhattan for a 24-hour period (July 9, 2014). Each circle is a different Citibike station. The size of the circle indicates what percentage of its docks are unavailable. If the dock is completely full, the station circle turns red. The time lapse begins at midnight. Pay close attention during commuting hours.
 [!embed](http://www.youtube.com/watch?v=QxiTnqGxnZg)
 
 
 ###**how did i build it?**
-To say this was a hack-y project is an understatement. With little coding experience, I was really working off the cuff, reading whichever blog posts and Stack Overflow comments I could find to guide me. In retrospect, the project gave me exposure to a couple of great R packages, such as <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> and <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>. Additionally, this was my first experience with <a href="http://crontab.org/" target="_blank">Crontab</a>, which has now become a staple for me, both at home and at work.
-Citibike generously makes their data easy to access. Annyone can go to <a href="http://citibikenyc.com/stations/json" target="_blank">this url</a> at any time to get a live snapshot of every station in the system, including the number of bikes available, the number of docks available, and the latitude/ longitutde location. R package <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> makes reading clean json data ridiculously easy, with just one line of code:
+To say this was a hack-y project is an understatement. With little coding experience, I was really working off the cuff, reading whichever blog posts and Stack Overflow comments I could find to guide me. In retrospect, the project gave me exposure to some great R packages, such as <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> and <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>. Additionally, this was my first experience with <a href="http://crontab.org/" target="_blank">Crontab</a>, which has now become a staple for me both at home and at work.
+Citibike generously makes their data easy to access. Anyone can go to <a href="http://citibikenyc.com/stations/json" target="_blank">this url</a> at any time to get a live snapshot of every station in the system, including the number of bikes available, the number of docks available, and the latitude/ longitutde location. R package <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> makes reading clean json data ridiculously easy, with just one line of code:
 
-    require(jsonlite)
-    json_data = jsonlite::fromJSON(txt = "http://citibikenyc.com/stations/json")
+```r
+require(jsonlite)
+json_data = jsonlite::fromJSON(txt = "http://citibikenyc.com/stations/json")
+```
 
-The json file provides a dataframe with the station data. To plot each of the stations on a map of NYC, I found an R package, <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>, which provides a great ggplot-like style for plotting latitude and longitude data. 
+To plot each of the stations on a map of NYC, I found an R package, <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>, which provides a great ggplot-like style for plotting latitude and longitude data. 
 Here is some sample code to generate the map of NYC and plot the corresponding stations.
 
-So I thought this was pretty cool, but a snapshot was only so informative. The natural question is how this plot changes as the day went on. Thus, I discovered <a href="http://crontab.org/" target="_blank">Cron</a>. I scheduled my script to run every 5 minutes, saving a copy of the mapped image with a time-stamped filename to a folder on my local computer. I realized shortly thereafater that the cron would not run with my computer closed (duh). My crude solution was to leave my computer open and running for a full 48 hours (thanks, <a href="http://lightheadsw.com/caffeine/" target="_blank">caffeine</a>)!.
+So I thought this was pretty cool, but a snapshot was only so informative. The natural question is how this plot changes as the day went on. Thus, I discovered <a href="http://crontab.org/" target="_blank">Cron</a>. I scheduled my script to run every 5 minutes, saving a copy of the mapped image with a time-stamped filename to a folder on my local computer. I realized shortly thereafater that the cron would not run with my computer closed (duh, Matt). My crude solution was to leave my computer open and running for a full 48 hours (thanks, <a href="http://lightheadsw.com/caffeine/" target="_blank">caffeine</a>)!.
 Two days later, I had a folder of images with timestamped titles. I strung them together in a video to represent the 24-hour timeframe, and that was it!
 
 

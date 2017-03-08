@@ -1,12 +1,9 @@
 [submodule "themes/Flex"]
 	path = themes/Flex
 	url = https://github.com/alexandrevicenzi/Flex.git
-[submodule "pelican-plugins"]
-	path = pelican-plugins
-	url = https://github.com/getpelican/pelican-plugins.git
-[submodule "plugins/ipynb"]
-	path = plugins/ipynb
-	url = https://github.com/danielfrg/pelican-ipynb.git
 [submodule "plugins/pelican-bootstrapify"]
 	path = plugins/pelican-bootstrapify
 	url = https://github.com/ingwinlu/pelican-bootstrapify
+[submodule "plugins/pelican-ipynb"]
+	path = plugins/pelican-ipynb
+	url = https://github.com/danielfrg/pelican-ipynb

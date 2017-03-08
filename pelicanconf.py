@@ -5,14 +5,16 @@ from __future__ import unicode_literals
 AUTHOR = u'Matt Negrin'
 SITENAME = u'Matt Negrin'
 SITEURL = 'https://matt-negrin.github.io'
-SITENAME = "Matt Negrin's Blog"
-SITESUBTITLE = 'Data Scientist - Birchbox'
+SITENAME = "Lazy Learning"
+SITESUBTITLE = '''Taco and data enthusiast.
+Currently a data scientist at Birchbox.
+A blog mostly about statistics and machine learning, but I'm probably still thinking about tacos.'''
 #Flex: SITELOGO = '/images/bitm.png'
 SITEIMAGE = '/images/bitm.png'
 DESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
-FAVICON = '/images/favicon.ico'
-# RFG_FAVICONS = '/images/favicon.ico'
-BROWSER_COLOR = '#333333'
+# FAVICON = '/images/favicon.ico'
+RFG_FAVICONS = '/images/favicon.ico'
+# BROWSER_COLOR = '#333333'
 HIDE_AUTHORS = True
 
 DIRECT_TEMPLATES = ['index', 'tags', 'archives']
@@ -80,8 +82,8 @@ NOTEBOOK_DIR = ['notebooks']
 # PAGE_SAVE_AS = '{slug}/index.html'
 
 MARKUP=('md','ipynb')
-PLUGIN_PATHS=['pelican-plugins','plugins']
-PLUGINS=['liquid_tags.notebook','liquid_tags.include_code','ipynb.liquid', 'pelican_youtube','pelican-bootstrapify',]
+PLUGIN_PATHS=['plugins/pelican-plugins','plugins']
+PLUGINS=['pelican_youtube','pelican-bootstrapify','pelican-ipynb.liquid', 'liquid_tags.notebook','liquid_tags.include_code',]
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
 
@@ -94,11 +96,17 @@ BOOTSTRAPIFY = {
 EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}}
 
 MARKDOWN = {
+  'extensions' : ['markdown.extensions.codehilite', 'markdown.extensions.extra', 'markdown.extensions.meta', 'markdown.extensions.fenced_code'],
   'extension_configs': {
-    'pyembed.markdown': {},
-    'codehilite(linenums = True)' : {}
+    'markdown.extensions.codehilite': {'css_class': 'highlight'},
+    'pyembed.markdown': {}
+    # 'codehilite(linenums = True)' : {}
   }
 }
+
+# MARKDOWN =['fenced_code', 'codehilite(css_class=highlight)', 'extra',]
+# MARKDOWN = {'extension_configs': {'pyembed.markdown': {}}}]
+
 
 
 # Uncomment following line if you want document-relative URLs when developing
