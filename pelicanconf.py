@@ -83,7 +83,8 @@ NOTEBOOK_DIR = ['notebooks']
 
 MARKUP=('md','ipynb')
 PLUGIN_PATHS=['plugins/pelican-plugins','plugins']
-PLUGINS=['pelican_youtube','pelican-bootstrapify','pelican-ipynb.liquid', 'liquid_tags.notebook','liquid_tags.include_code',]
+PLUGINS=['pelican-bootstrapify','pelican-ipynb.liquid', 'liquid_tags.notebook','liquid_tags.include_code',]
+# 'pelican_youtube',
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
 
