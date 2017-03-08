@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hello, World! | lazy learning
+</title>
+  <link rel="canonical" href="https://matt-negrin.github.io/hello-world.html">
+
+
+  <link rel="apple-touch-icon" href="https://matt-negrin.github.io/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="https://matt-negrin.github.io/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://matt-negrin.github.io/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://matt-negrin.github.io/manifest.json">
+  <meta name="theme-color" content="#333333">
+
+  <link rel="stylesheet" href="https://matt-negrin.github.io/theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://matt-negrin.github.io/theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://matt-negrin.github.io/theme/css/pygments/monokai.min.css">
+  <link rel="stylesheet" href="https://matt-negrin.github.io/theme/css/style.css">
+
+
+<meta name="description" content="A blog post down memory lane">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://matt-negrin.github.io">
+            <img class="img-fluid" src=https://matt-negrin.github.io/images/bitm.png alt="lazy learning">
+          </a>
+        </div>
+        <div class="col-sm-8">
+          <h1 class="title"><a href="https://matt-negrin.github.io">lazy learning</a></h1>
+          <p class="text-muted">Taco and data enthusiast.
+Currently a data scientist at Birchbox.
+A blog mostly about statistics and machine learning, but I'm probably still thinking about tacos.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="fa fa-smile-o" href="https://en.wikipedia.org/wiki/Lazy_learning" target="_blank"></a></li>
+            <li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/mattnegrin" target="_blank"></a></li>
+            <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/matt-negrin" target="_blank"></a></li>
+            <li class="list-inline-item"><a class="fa fa-envelope-o" href="https://mail.google.com/mail/?view=cm&fs=1&to=matt.negrin@gmail.com" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>Hello, World!
+</h1>
+      <hr>
+<article class="article">
+  <header>
+    <ul class="list-inline">
+      <li class="list-inline-item text-muted" title="2017-02-28T12:00:00-05:00">
+        <i class="fa fa-clock-o"></i>
+        February 28, 2017
+      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="https://matt-negrin.github.io/category/projects.html">Projects</a>
+      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-files-o"></i>
+        <a href="https://matt-negrin.github.io/tag/citibike.html">#citibike</a>,         <a href="https://matt-negrin.github.io/tag/r.html">#R</a>,         <a href="https://matt-negrin.github.io/tag/ggmap.html">#ggmap</a>,         <a href="https://matt-negrin.github.io/tag/jsonlite.html">#jsonlite</a>,         <a href="https://matt-negrin.github.io/tag/caffeine.html">#caffeine</a>      </li>
+    </ul>
+  </header>
+  <div class="content">
+    <h3><strong>hi there</strong></h3>
+<p>For a long time I have wanted to document some of my side projects and learnings. After years of procrastination, I've finally begun. Welcome!  </p>
+<p>To kick things off, I thought it would be fun to reflect on the first data project I ever worked on. Being a bit introspective, my data science career track genuinely began (unknowingly) in an econometrics class in college. However, I did not formally begin learning about what data science was as a practice was until well after. In early 2014, I began working on data projects, not only as a means of self-learning, but also because I was fascinated by solving historically abstract problems with interesting data sets (this seemed to tie closely to why I enjoyed econometrics in college... <a href="https://media.giphy.com/media/yODVOeMxWBwBO/giphy.gif" target="_blank">nerd alert</a>).  </p>
+<p>I got hooked pretty quickly and have been working on side projects ever since, ranging from participating in machine learning kaggle competitions to building interactive Shiny apps to generating fantasy football lineup predictions, most recently working more intently on deep learning and image classification.  </p>
+<p><em>Lazy Learning</em> will be a work in progress. For now, I hope to write about cool projects I'm working on, learnings from what I'm studying, or pieces of code that may be helpful for others to stumble upon.  </p>
+<h3><strong>everyone loves videos</strong></h3>
+<p>Here it is! The first data project I completed. As an early adopter of Citibike, I was naturally attracted to its open-sourced data. Citibike was already a popular source for analytical project work in 2014, but not nearly to the extent it is today.  </p>
+<p>Let's start with the final product. The video below visualizes the flow of Citibike station capacity onto a map of Manhattan for a 24-hour period (July 9, 2014). Each circle is a different Citibike station. The size of the circle indicates what percentage of its docks are unavailable. If the dock is completely full, the station circle turns red. The time lapse begins at midnight. Pay close attention to the trend during commuting hours. (Thank you to <a href="http://www.queenonline.com/" target="_blank">Queen</a> for one of my favorite childhood songs).</p>
+<p><iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/QxiTnqGxnZg?feature=oembed" width="480"></iframe> </p>
+<h3><strong>how did i build it?</strong></h3>
+<p>To say this was a hack-y project is an understatement. With little coding experience, I was definitely winging it, reading whichever blog posts and Stack Overflow comments I could find to guide me. In retrospect, the project gave me exposure to some great R packages, such as <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> and <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>. Additionally, this was my first experience with <a href="http://crontab.org/" target="_blank">cron</a>, which has now become a staple for me both at home and at work.  </p>
+<p>Citibike generously makes their data easy to access. Anyone can go <a href="http://citibikenyc.com/stations/json" target="_blank">here</a> at any time to get a live snapshot of every station in the system, including the number of bikes available, the number of docks available, and the latitude/ longitutde location. R package <a href="https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf" target="_blank">jsonlite</a> makes reading clean json data ridiculously easy, with just one line of code:  </p>
+<div class="highlight"><pre><span></span><span class="kn">require</span><span class="p">(</span>jsonlite<span class="p">)</span>
+json_data <span class="o">=</span> jsonlite<span class="o">::</span>fromJSON<span class="p">(</span>txt <span class="o">=</span> <span class="s">"http://citibikenyc.com/stations/json"</span><span class="p">)</span>
+</pre></div>
+<p>To plot each of the stations on a map of NYC, I found R package, <a href="https://cran.r-project.org/web/packages/ggmap/ggmap.pdf" target="_blank">ggmap</a>, which provides a great ggplot-like style for plotting latitude and longitude data. 
+Here is some sample code to generate a map of NYC and plot the corresponding stations.  </p>
+<div class="highlight"><pre><span></span><span class="kn">require</span><span class="p">(</span>ggmap<span class="p">)</span>  
+<span class="kn">require</span><span class="p">(</span>ggplot2<span class="p">)</span>  
+nycmap <span class="o">&lt;-</span> ggmap<span class="o">::</span>get_map<span class="p">(</span>location <span class="o">=</span> <span class="kt">c</span><span class="p">(</span>lon <span class="o">=</span> <span class="m">-73.992920</span><span class="p">,</span> lat <span class="o">=</span> <span class="m">40.740075</span><span class="p">),</span> 
+                    color <span class="o">=</span><span class="s">"color"</span><span class="p">,</span> <span class="kn">source</span><span class="o">=</span> <span class="s">"google"</span><span class="p">,</span> zoom <span class="o">=</span> <span class="m">13</span><span class="p">,</span> 
+                    maptype <span class="o">=</span> <span class="s">"roadmap"</span><span class="p">,</span> filename <span class="o">=</span> <span class="s">"ggmapnyc"</span><span class="p">)</span>
+
+ggmap<span class="o">::</span>ggmap<span class="p">(</span>nycmap<span class="p">)</span> <span class="o">+</span>  
+    geom_point<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> longitude<span class="p">,</span> y <span class="o">=</span> latitude<span class="p">,</span> size <span class="o">=</span> <span class="p">(</span>citiframe<span class="o">$</span>bike_ratio<span class="p">)</span><span class="o">*</span><span class="m">7</span><span class="p">),</span> colour <span class="o">=</span> <span class="kp">ifelse</span><span class="p">(</span>citiframe<span class="o">$</span>bike_ratio<span class="o">==</span><span class="m">1</span><span class="p">,</span> <span class="s">'red'</span><span class="p">,</span> <span class="s">'green4'</span><span class="p">),</span>  data <span class="o">=</span> citiframe<span class="p">)</span> <span class="o">+</span>  
+    theme<span class="p">(</span>axis.title.x <span class="o">=</span> element_blank<span class="p">(),</span> axis.text.x <span class="o">=</span> element_blank<span class="p">(),</span> axis.title.y <span class="o">=</span> element_blank<span class="p">(),</span> axis.text.y <span class="o">=</span> element_blank<span class="p">(),</span> title  <span class="o">=</span> element_text<span class="p">(</span>face<span class="o">=</span><span class="s">"bold"</span><span class="p">,</span> size<span class="o">=</span><span class="m">20</span><span class="p">))</span> <span class="o">+</span>  
+    labs<span class="p">(</span>title<span class="o">=</span>json_data<span class="o">$</span>executionTime<span class="p">)</span> <span class="o">+</span> guides<span class="p">(</span>colour <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> size<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
+</pre></div>
+<p>I remember thinking that this was pretty cool, but also somewhat disappointed. It was clear that a snapshot was only so informative. The natural follow-up question is how this plot might change throughout the day. Thus, I discovered <a href="http://crontab.org/" target="_blank">cron</a>. I scheduled my script to run every 5 minutes, saving a copy of the mapped image with a time-stamped filename to a folder on my local computer. I realized shortly thereafater that the cron would not run with my computer closed (duh, Matt). My crude solution was to leave my computer open and running for a full 48 hours (thanks, <a href="http://lightheadsw.com/caffeine/" target="_blank">caffeine</a>!).  </p>
+<p>Two days later, I had a folder of images with timestamped titles. I strung them together in a video to represent the 24-hour timeframe, and that was it!  </p>
+<h3><strong>what was good?</strong></h3>
+<p>In retrospect, this project was great for me for a number of reasons.  </p>
+<p>First, I loved working on it. This was first time I had built something from scratch with code. I found that feeling to be exhilirating. I was proud of the finished product, and that I had managed to figure out how to complete it with just the help of the internet.  </p>
+<p>Second, the conclusions I drew supported the frustrations I was having at the time with the Citibike service. I was often worried about commuting home at night via Citibike because of dock availability. Seeing how intensely bike availability actually fluctuated with commuting hours confirmed that I wasn't crazy, which is always nice to know.  </p>
+<p>Lastly, the video ended up being a nugget of an idea that led to my first end-to-end data project at the end of 2014: a <a href="" target="_blank"></a><a href="https://mattnegrin.shinyapps.io/citibike/">Shiny app</a> that explored the relationship between weather and Citibike usage among different neighborhoods in Manhattan. The analysis (also done in 2014) is certainly a bit crude but also fairly interesting. Feel free to let me know what you think! Apologies for inundating the internet with yet another Citibike project...  </p>
+<h3><strong>what was bad?</strong></h3>
+<p>As I said above, this project is pretty hack-y. I still laugh when I think about leaving my computer running for 48 hours as a means of collecting the data I needed, rather than seeking out the help of a server.  </p>
+<p>My primary gripe with my execution is in the data collection. Rather than generate a static image every 5 minutes, I would have been far better off recording a snapshot of data every 5 minutes instead, compiling those snapshots into one large dataset. This way, I would have been able to work on much more interesting analyses later on.  </p>
+<p>Of course, I could only have stored so many sets of data on my local computer before the dataset would have become too large. If redoing the project today, I would keep a script running on AWS that dumps the data into a PostgreSQL database, where I can come back at my leisure to tinker and explore.  </p>
+<h3><strong>next steps?</strong></h3>
+<p>For this project, I don't have any! It was fun to go back down project memory lane. Below is the full script I wrote to generate and save a single map with plotted stations. You can see how the whole process only requires a few lines of code. For my next post, I'll focus on something I've been working on recently. Happy Citibiking!  </p>
+<div class="highlight"><pre><span></span><span class="c1">#set up directory structure</span>
+mainDir <span class="o">&lt;-</span> <span class="s">'~/citibike_map'</span>
+subDir  <span class="o">&lt;-</span> <span class="s">'output'</span>
+<span class="kp">ifelse</span><span class="p">(</span> <span class="o">!</span>dir.exists<span class="p">(</span><span class="kp">file.path</span><span class="p">(</span> mainDir <span class="p">)),</span> <span class="kp">dir.create</span><span class="p">(</span><span class="kp">file.path</span><span class="p">(</span> mainDir <span class="p">)),</span> <span class="kc">FALSE</span><span class="p">)</span>
+<span class="kp">ifelse</span><span class="p">(</span> <span class="o">!</span>dir.exists<span class="p">(</span><span class="kp">file.path</span><span class="p">(</span> mainDir<span class="p">,</span> subDir<span class="p">)),</span> <span class="kp">dir.create</span><span class="p">(</span><span class="kp">file.path</span><span class="p">(</span> mainDir<span class="p">,</span> subDir <span class="p">)),</span> <span class="kc">FALSE</span><span class="p">)</span>
+<span class="kp">setwd</span><span class="p">(</span>mainDir<span class="p">)</span>
+
+<span class="c1">#importing data from json file</span>
+<span class="kn">require</span><span class="p">(</span>jsonlite<span class="p">)</span>
+json_data <span class="o">=</span> jsonlite<span class="o">::</span>fromJSON<span class="p">(</span>txt <span class="o">=</span> <span class="s">"http://citibikenyc.com/stations/json"</span><span class="p">)</span>
+
+<span class="c1">#creating dataframe</span>
+citiframe <span class="o">=</span> dplyr<span class="o">::</span>tbl_df<span class="p">(</span>json_data<span class="o">$</span>stationBeanList<span class="p">)</span>
+citiframe<span class="o">$</span>time <span class="o">=</span> json_data<span class="o">$</span>executionTime
+
+<span class="c1">#adding relevant columns</span>
+citiframe<span class="o">$</span>total <span class="o">&lt;-</span> citiframe<span class="o">$</span>availableDocks <span class="o">+</span> citiframe<span class="o">$</span>availableBikes
+citiframe<span class="o">$</span>bike_ratio <span class="o">&lt;-</span> <span class="kp">ifelse</span><span class="p">(</span>citiframe<span class="o">$</span>total<span class="o">==</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="p">,</span>citiframe<span class="o">$</span>availableBikes <span class="o">/</span> citiframe<span class="o">$</span>total<span class="p">)</span>
+
+<span class="c1">#creating map of manhattan</span>
+<span class="kn">require</span><span class="p">(</span>ggmap<span class="p">)</span>
+<span class="kn">require</span><span class="p">(</span>ggplot2<span class="p">)</span>
+nycmap <span class="o">&lt;-</span> ggmap<span class="o">::</span>get_map<span class="p">(</span>location <span class="o">=</span> <span class="kt">c</span><span class="p">(</span>lon <span class="o">=</span> <span class="m">-73.992920</span><span class="p">,</span> lat <span class="o">=</span> <span class="m">40.740075</span><span class="p">),</span> 
+                    color <span class="o">=</span><span class="s">"color"</span><span class="p">,</span> <span class="kn">source</span><span class="o">=</span> <span class="s">"google"</span><span class="p">,</span> zoom <span class="o">=</span> <span class="m">13</span><span class="p">,</span> 
+                    maptype <span class="o">=</span> <span class="s">"roadmap"</span><span class="p">,</span> filename <span class="o">=</span> <span class="s">"ggmapnyc"</span><span class="p">)</span>
+
+<span class="c1">#creating map with size-dependent dots</span>
+dotmap <span class="o">&lt;-</span> ggmap<span class="o">::</span>ggmap<span class="p">(</span>nycmap<span class="p">)</span> <span class="o">+</span> 
+    geom_point<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> longitude<span class="p">,</span> y <span class="o">=</span> latitude<span class="p">,</span> size <span class="o">=</span> <span class="p">(</span>citiframe<span class="o">$</span>bike_ratio<span class="p">)</span><span class="o">*</span><span class="m">7</span><span class="p">),</span> colour <span class="o">=</span> <span class="kp">ifelse</span><span class="p">(</span>citiframe<span class="o">$</span>bike_ratio<span class="o">==</span><span class="m">1</span><span class="p">,</span> <span class="s">'red'</span><span class="p">,</span> <span class="s">'green4'</span><span class="p">),</span> data <span class="o">=</span> citiframe<span class="p">)</span> <span class="o">+</span> 
+    theme<span class="p">(</span>axis.title.x <span class="o">=</span> element_blank<span class="p">(),</span> axis.text.x <span class="o">=</span> element_blank<span class="p">(),</span> axis.title.y <span class="o">=</span> element_blank<span class="p">(),</span> axis.text.y <span class="o">=</span> element_blank<span class="p">(),</span> title <span class="o">=</span> element_text<span class="p">(</span>face<span class="o">=</span><span class="s">"bold"</span><span class="p">,</span> size<span class="o">=</span><span class="m">20</span><span class="p">))</span> <span class="o">+</span>
+    labs<span class="p">(</span>title<span class="o">=</span>json_data<span class="o">$</span>executionTime<span class="p">)</span> <span class="o">+</span> guides<span class="p">(</span>colour <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> size<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
+
+<span class="c1">#saving chart to directory</span>
+<span class="kn">require</span><span class="p">(</span>png<span class="p">)</span>
+mypath <span class="o">&lt;-</span> <span class="kp">file.path</span><span class="p">(</span>mainDir<span class="p">,</span>subDir<span class="p">,</span><span class="kp">paste</span><span class="p">(</span><span class="s">"citibike_"</span><span class="p">,</span> <span class="kp">gsub</span><span class="p">(</span><span class="s">" "</span><span class="p">,</span><span class="s">"__"</span><span class="p">,</span><span class="kp">gsub</span><span class="p">(</span><span class="s">":"</span><span class="p">,</span><span class="s">"_"</span><span class="p">,</span>json_data<span class="o">$</span>executionTime<span class="p">)),</span> <span class="s">".png"</span><span class="p">,</span> sep <span class="o">=</span> <span class="s">""</span><span class="p">))</span>
+png<span class="p">(</span>file<span class="o">=</span>mypath<span class="p">)</span>
+dotmap
+dev.off<span class="p">()</span>
+</pre></div>
+  </div>
+</article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+       <ul class="col-sm-6 list-inline">
+          <li class="list-inline-item"><a href="https://matt-negrin.github.io/archives.html">Archives</a></li>
+          <li class="list-inline-item"><a href="https://matt-negrin.github.io/categories.html">Categories</a></li>
+          <li class="list-inline-item"><a href="https://matt-negrin.github.io/tags.html">Tags</a></li>
+        </ul>
+        <p class="col-sm-6 text-sm-right text-muted">
+          Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
