@@ -15,7 +15,8 @@ FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
 HIDE_AUTHORS = True
 
-DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
+DIRECT_TEMPLATES = ['index', 'tags', 'archives']
+SITEMAP_SAVE_AS = 'sitemap.xml'
 
 #Flex: THEME = 'themes/Flex'
 THEME = 'themes/pelican-alchemy/alchemy'
@@ -41,13 +42,13 @@ MAIN_MENU = True
 
 # LINKS = (('Pelican', 'http://getpelican.com/'),)
 
-SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mattnegrin'),
+ICONS = (('linkedin', 'https://www.linkedin.com/in/mattnegrin'),
           ('github', 'https://github.com/matt-negrin'),
           ('envelope-o', 'https://mail.google.com/mail/?view=cm&fs=1&to=matt.negrin@gmail.com'),)
 
-MENUITEMS = (('Archives', '/archives.html'),
-             ('Categories', '/categories.html'),
-             ('Tags', '/tags.html'),)
+# MENUITEMS = (('Archives', '/archives.html'),
+#              ('Categories', '/categories.html'),
+#              ('Tags', '/tags.html'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -80,9 +81,15 @@ NOTEBOOK_DIR = ['notebooks']
 
 MARKUP=('md','ipynb')
 PLUGIN_PATHS=['pelican-plugins','plugins']
-PLUGINS=['liquid_tags.notebook','liquid_tags.include_code','ipynb.liquid', 'pelican_youtube',]
+PLUGINS=['liquid_tags.notebook','liquid_tags.include_code','ipynb.liquid', 'pelican_youtube','pelican-bootstrapify',]
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
+
+BOOTSTRAPIFY = {
+    'table': ['table', 'table-striped', 'table-hover'],
+    'img': ['img-fluid'],
+    'blockquote': ['blockquote'],
+}
 
 EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}}
 
