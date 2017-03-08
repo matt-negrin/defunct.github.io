@@ -17,7 +17,7 @@ RFG_FAVICONS = '/images/favicon.ico'
 # BROWSER_COLOR = '#333333'
 HIDE_AUTHORS = True
 
-DIRECT_TEMPLATES = ['index', 'tags', 'archives']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
 SITEMAP_SAVE_AS = 'sitemap.xml'
 
 #Flex: THEME = 'themes/Flex'
@@ -48,9 +48,9 @@ ICONS = (('linkedin', 'https://www.linkedin.com/in/mattnegrin'),
           ('github', 'https://github.com/matt-negrin'),
           ('envelope-o', 'https://mail.google.com/mail/?view=cm&fs=1&to=matt.negrin@gmail.com'),)
 
-# MENUITEMS = (('Archives', '/archives.html'),
-#              ('Categories', '/categories.html'),
-#              ('Tags', '/tags.html'),)
+MENUITEMS = (('Archives', '/archives.html'),
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -104,10 +104,6 @@ MARKDOWN = {
     # 'codehilite(linenums = True)' : {}
   }
 }
-
-# MARKDOWN =['fenced_code', 'codehilite(css_class=highlight)', 'extra',]
-# MARKDOWN = {'extension_configs': {'pyembed.markdown': {}}}]
-
 
 
 # Uncomment following line if you want document-relative URLs when developing
